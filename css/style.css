@@ -261,14 +261,6 @@ section {
   padding: 30px;
 }
 
-/* .nav:active {
-  color: 2px solid #fcb69f;
-} */
-
-.nav:hover {
-  color: #fcb69f;
-  transition: linear all 0.3s;
-}
 
 ul {
   list-style-type: none;
@@ -284,20 +276,21 @@ li a {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   text-decoration: none;
   letter-spacing: 2.5px;
-  font-size: 14px;
+  font-size: 1rem;
   z-index: 4;
   color: #000;
   font-family: var(--body-fonts);
   font-weight: 400;
   display: flex;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 li a:hover {
-  color: #000;
+  color: #fcb69f;
   transition: linear all 0.3s;
   pointer-events: cursor;
 }
+
 
 a {
   text-decoration: none;
@@ -475,6 +468,7 @@ ion-icon:hover {
   top: 40%;
   width: 65%;
   opacity: 0.9;
+  z-index: 3;
 }
 
 .project-second-img img {
@@ -616,7 +610,7 @@ ion-icon:hover {
 .contact-p {
   position: relative;
   left: 5%;
-  width: 100%;
+  width: 80%;
   margin: 20px;
   padding: 20px;
   letter-spacing: 2px;
@@ -755,4 +749,67 @@ textarea {
   transition: linear all 0.3s;
   border: solid 0.1px #000;
   cursor: pointer;
+}
+
+
+/* scroll effect */
+
+.intro_text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s all ease-in-out;
+}
+
+.intro_appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* metif korea  */
+
+.metifkorea-project {
+  display: flex;
+  margin: auto;
+  background: #000;
+  height: 70vh;
+  }
+
+.metifkorea-project h2{
+  color: #fff;
+  margin: auto;
+  font-size: 6rem;
+  font-family: var(--body-fonts);
+  letter-spacing: 2px;
+  padding: 30px;
+
+}
+
+.metifkorea-project p{
+  color: #fff;
+  margin: auto;
+  font-size: 3rem;
+  font-family: var(--body-fonts);
+  letter-spacing: 2px;
+  padding: 50px;
+  text-align: center;
+}
+
+.metifkorea-project2 {
+    display: flex;
+    margin: auto;
+    background: #fff;
+    height: 80vh;
+}
+
+.metifkorea-project2 p{
+  color: #fff;
+}
+
+.metifkorea-project2 img{
+  margin: auto;
+  width: 30%;
+}
+
+.metif-mockup {
+  width: 100%;
 }
